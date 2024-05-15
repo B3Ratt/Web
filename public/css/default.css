@@ -3,11 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+html::-webkit-scrollbar{
+    width: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background-color: rgb(224, 234, 224);
+    background-color: rgb(239, 228, 228);
 }
 img, video{
     width: 100%;

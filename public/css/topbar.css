@@ -77,11 +77,11 @@ justify-content: space-evenly;
 
 /* Scroll Animasyonu */
 .topbar .wrapper{
-    opacity: 1;
+    opacity: 0;
     transition: all 0.5s;
     transform: translateY(-10px);
 }
-.topbar .wrapper .active{
+.topbar .wrapper.active{
     opacity: 1;
     transform: translateY(0px);
 }
