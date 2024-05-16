@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     font-family: "Teachers", sans-serif;
-    background-color: antiquewhite;
+    background-color: white;
 }
 .topbar .wrapper{
     width: 100%;
@@ -45,7 +45,7 @@ justify-content: space-evenly;
 .topbar .right .searchEngine i{
     position: absolute;
     right: 0px;
-    background-color: orange;
+    background-color: rgb(169, 40, 169);
     width: 30px;
     height: 30px;
     display: flex;
