@@ -1,34 +1,16 @@
 <?php
-// public/php/login.php
+// Kullanıcıdan giriş bilgilerini al
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Kullanıcı adı ve şifrenin boş olmadığını kontrol et
-    if (empty($username) || empty($password)) {
-        header("Location: ../login.html");
-        exit();
-    }
-
-    // Kullanıcı adı formatını kontrol et
-    if (!filter_var($username, FILTER_VALIDATE_EMAIL) || !str_ends_with($username, '@sakarya.edu.tr')) {
-        header("Location: ../login.html");
-        exit();
-    }
-
-    // Öğrenci numarasını kullanıcı adından çıkar
-    $studentNumber = explode('@', $username)[0];
-
-    // Şifre kontrolü
-    if ($password === $studentNumber) {
-        // Başarılı giriş, anasayfaya yönlendirme
-        header("Location: ../index.html");
-        exit();
-    } else {
-        // Başarısız giriş, login sayfasına yönlendirme
-        header("Location: ../login.html");
-        exit();
-    }
+// Kullanıcı adı ve parolayı kontrol etmek için basit bir örnek
+if ($username == 'B221210050@sakarya.edu.tr' && $password == 'B221210050') {
+    // Başarılı giriş durumunda kullanıcıyı başka bir sayfaya yönlendir
+    header('Location: index.html?success=true');
+    exit();
+} else {
+    // Hatalı giriş durumunda kullanıcıyı login.html sayfasına yönlendir ve bir hata mesajı göster
+    header('Location: login.html?error=invalid_credentials');
+    exit();
 }
 ?>

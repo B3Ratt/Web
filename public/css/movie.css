@@ -1,0 +1,35 @@
+/* movie.css */
+
+/* Movie container styles */
+.movies {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Değiştirilen kısım */
+    gap: 20px;
+}
+
+/* Movie card styles */
+.movies li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.movies li img {
+    max-width: 100%;
+    max-height: 150px; /* Değiştirilen kısım */
+    border-radius: 5px;
+}
+
+.movies li h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.movies li p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #666;
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>İletişim</title>
 </head>
 
 <body>
@@ -24,7 +24,11 @@
                 <a href="./about.html">HAKKINDA</a>
                 <a href="./register.html">KAYIT OL</a>
                 <a href="./login.html">GİRİŞ YAP</a>
-                <a href="./add.html">EKLE</a>
+                <a href="./add.html">ILETISIM</a>
+                <a href="./movie.html">ILGI ALANLARIM</a>
+                <a href="./cv.html">CV</a>
+                <a href="./miras.html">MIRASIMIZ</a>
+                <a href="./hobi.html">HOBILERIM</a>
             </div>
             <div class="right">
                 <span>
@@ -39,36 +43,28 @@
     </div>
 
     <div class="add">
-        <form>
+        <form id="contactForm">
             <div class="text">
-                <input type="text" placeholder="Baslik *" required>
-                <textarea placeholder="Icerik *" required></textarea>
-                <input type="text" placeholder="Isminiz *" required>
+                <input type="text" placeholder="Adınız *" id="name" required>
+                <input type="email" placeholder="E-posta *" id="email" required>
+                <textarea placeholder="Mesajınız *" id="message" required></textarea>
             </div>
             <div class="button">
-                <button>
-                    <i class="fa-solid fa-plus"></i>
+                <button type="button" onclick="clearForm()">
+                    Temizle
                 </button>
-                <label for="file">
-                    <i class="fa-regular fa-image"></i>
-                </label>
-
-                <input type="file" id="file" style="display: none;">
+                <button type="button" onclick="validateAndSubmit()">
+                    Gönder
+                </button>
             </div>
-
-
-
         </form>
     </div>
 
+    <footer>
+        <p>&copy; 2024 Berat Alpsar. All rights reserved.</p>
+    </footer>
 
-
-
-
-
-
-
-
+    <script src="../public/js/contact.js"></script>
     <script src="../public/js/search.js"></script>
     <script src="../public/js/scroll.js"></script>
 

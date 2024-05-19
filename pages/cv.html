@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV</title>
+</head>
+<body>
+    <header class="topbar">
+        <div class="wrapper target target">
+            <div class="left">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>  
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <nav class="center">
+                <a href="/">ANASAYFA</a>
+                <a href="./about.html">HAKKINDA</a>
+                <a href="./register.html">KAYIT OL</a>
+                <a href="./login.html">GİRİŞ YAP</a>
+                <a href="./add.html">ILETISIM</a>
+                <a href="./movie.html">ILGI ALANLARIM</a>
+                <a href="./cv.html">CV</a>
+                <a href="./miras.html">MIRASIMIZ</a>
+                <a href="./hobi.html">HOBILERIM</a>
+            </nav>
+            <div class="right">
+                <span>
+                    <img src="../public/img/wts2BRbwIES2jNEDvtR3Sg.webp" alt="user">
+                </span>
+                <div class="searchEngine" id="searchEngine">
+                    <input type="text" placeholder="...">
+                    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="header target">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="/public/img/okul1.jpg" alt="1" onclick="window.location.href = '/pages/cv.html#wrapper-1';">
+                        <img id="slide-2" src="/public/img/okul2.jpg" alt="2" onclick="window.location.href = '/pages/cv.html#wrapper-2';">
+                        <img id="slide-3" src="/public/img/mimal.jpg" alt="3" onclick="window.location.href = '/pages/cv.html#wrapper-3';">
+                        <img id="slide-4" src="/public/img/okul4.jpg" alt="4" onclick="window.location.href = '/pages/cv.html#wrapper-4';">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                    </div>
+                </div>
+            </div>
+            <h1>OKUDUGUM OKULLAR</h1>
+        </section>
+
+        <section class="about">
+            <div class="wrapper target" id="wrapper-1">
+                <div class="text">
+                    <h1>Atataurk Ilkokulu</h1>
+                    <p>Okudugum ilkokul.</p>
+                </div>
+                <div class="photo">
+                    <img src="../public/img/okul1.jpg" alt="">
+                </div>
+            </div>
+            <div class="wrapper target" id="wrapper-2">
+                <div class="text">
+                    <h1>Semsettin Karahisari Ortaokulu</h1>
+                    <p>Okudugum ortaokul. Burada tam 4 senem geçti ve güzel anılar biriktirdim.</p>
+                </div>
+                <div class="photo">
+                    <img src="../public/img/okul2.jpg" alt="">
+                </div>
+            </div>
+            <div class="wrapper target" id="wrapper-3">
+                <div class="text">
+                    <h1>Mektebi Idadi Mulki Afyon Lisesi</h1>
+                    <p>Türkiye'nin en eski liselerinden biri olan Afyon Lisesi. 2 cumhurbaşkanı mezun etmiş bu lisede tam 4 sene geçirdim ve ömrüm boyunca unutamayacağım tecrübeler elde ettim. Binamız da fotoğrafta görüldüğü üzere oldukça köklü ve eski bir bina idi. Ancak günümüz binalarına taş çıkartacağı aşikar. </p>
+                </div>
+                <div class="photo">
+                    <img src="../public/img/mimal.jpg" alt="">
+                </div>
+            </div>
+            <div class="wrapper target" id="wrapper-4">
+                <div class="text">
+                    <h1>Sakarya Üniversitesi</h1>
+                    <p>Şu anda eğitim görmekte olduğum üniversitem. Muhtemeşem bir kampüse ve harika imkanlara sahip.</p>
+                </div>
+                <div class="photo">
+                    <img src="../public/img/okul4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Berat Alpsar. All rights reserved.</p>
+    </footer>
+
+    <script src="../public/js/search.js"></script>
+    <script src="../public/js/scroll.js"></script>
+</body>
+</html>
